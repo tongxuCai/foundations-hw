@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 1. How many accidents are in the file?
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ wc -l OSHA\\ fatalities\\ FY2017.csv \
+     398 OSHA fatalities FY2017.csv\
+398-2=396\
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 2. I want to know what companies were involved in explosions. Can you search the file to only show falls? 
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ grep falls OSHA\\ fatalities\\ FY2017.csv \
+"10/28/2016","IC Waterfalls, Clarkston, MI 48348","Michael John Biven, Ian Curtin Tracey","Two workers drowned while removing buoys from lake.","2 Fatalities","1187978"\
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 3. I would like a file of only 2017 accidents. How many lines is in it?
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ grep 2017 OSHA\\ fatalities\\ FY2017.csv | wc -l \
+     120
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b 4. What command would I use to show me ONLY the first line of the file?
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ head -n 1 OSHA\\ fatalities\\ FY2017.csv \
+"Date of Incident ","Employer/Address of Incident ","Victim(s) ","Hazard Description ","Fatality or Catastrophe ","Inspection # "\
+
+\f0\b\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 5. How many accidents involved forklifts? Also, save them to a file.
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ grep forklift OSHA\\ fatalities\\ FY2017.csv >forklift.txt\
+dyn-209-2-226-210:01-classwork tongxucai$ \
+dyn-209-2-226-210:01-classwork tongxucai$ wc -l forklift.txt\
+      12 forklift.txt\
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 6. How many accidents were on Christmas Eve? Also, save them to a file.
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ grep Christmas Eve OSHA\\ fatalities\\ FY2017.csv >ChristmasEve.txt\
+dyn-209-2-226-210:01-classwork tongxucai$ wc -l ChristmasEve.txt\
+       1 ChristmasEve.txt\
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 7. I need a text file of accidents that involve trees!
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 dyn-209-2-226-210:01-classwork tongxucai$ grep tree OSHA\\ fatalities\\ FY2017.csv > tree.txt\
+dyn-209-2-226-210:01-classwork tongxucai$ ls\
+ChristmasEve.txt		Oxford-English-Dictionary.txt	forklift.txt			tree.txt\
+OSHA fatalities FY2017.csv	code}
